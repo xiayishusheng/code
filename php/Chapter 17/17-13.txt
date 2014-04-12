@@ -1,0 +1,6 @@
+mysql> create table test(							
+-> field1 float(4,2) not null						
+-> );
+mysql> insert into test(field1) values(57.1234);	
+->select * from test								
+mysql> insert into test values(100);				

@@ -1,0 +1,2 @@
+mysql > use people			
+mysql >describe students		

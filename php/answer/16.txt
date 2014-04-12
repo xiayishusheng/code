@@ -1,0 +1,2 @@
+一、1、GRANT、REVOKE；2、Create Database；3、指定当前默认；4、SHOW DATABASES；5、备份；6、drop；7、最少权限原则；8、主机上的操作系统；9、否
+二、1、B；2、D；3、A；4、D

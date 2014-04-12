@@ -1,0 +1,6 @@
+mysql>SELECT * FROM Persons	
+->WHERE City='Beijing'		
+->AND First_Name='zhang';		
+mysql>SELECT * FROM Persons	
+->WHERE City='Beijing'		
+->OR First_Name='zhang'	;	

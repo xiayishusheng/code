@@ -1,0 +1,2 @@
+Ò»¡¢1¡¢True¡¢False£»2¡¢filesize£¨£©¡¢filetype£¨£©¡¢fileatime£¨£©¡¢fileperms£¨£©£»3¡¢¡°scheme://¡­¡±¡¢¡°http://....¡±¡¢¡°ftp://...¡±£»4¡¢fgetc£¨£©¡¢fgets£¨£©£»5¡¢fwrite£¨£©£»6¡¢ftell£¨£©¡¢fseek£¨£©£»7¡¢fopen()¡¢fclose£¨£©£»8¡¢mkdir()¡¢rmdir£¨£©
+¶þ¡¢1¡¢A£»2¡¢B£»3¡¢A£»4¡¢D

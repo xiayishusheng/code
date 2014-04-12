@@ -1,0 +1,4 @@
+mysql>SELECT * 						
+->FROM Persons						
+mysql>SELECT First_Name ,Last_Name 	
+->FROM Persons						

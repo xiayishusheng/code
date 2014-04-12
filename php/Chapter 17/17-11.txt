@@ -1,0 +1,2 @@
+mysql> SELECT CURRENT_TIME()£»		
+mysql> SELECT CURRENT_ TIME ()+0£»

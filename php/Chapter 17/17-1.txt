@@ -1,0 +1,7 @@
+mysql>CREATE TABLE numb(								
+-	>id TINYINT (3) ,									
+-	> telephone INT,									
+	->wage INT(3)										
+	->);
+mysql> INSERT INTO numb  VALUES("1","123456789","4000");	
+mysql>SELECT * FROM numb;								

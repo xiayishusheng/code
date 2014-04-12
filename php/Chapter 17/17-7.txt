@@ -1,0 +1,8 @@
+mysql>CREATE TABLE ch_type		
+-> (
+	->ch1 char(3),			
+	->ch2 varchar(3),			
+	->ch3 char(4),			
+	->ch4 varchar(4)			
+);
+-> mysql>describe  ch_type;	

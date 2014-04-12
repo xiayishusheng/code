@@ -1,0 +1,2 @@
+mysql >show tables
+mysql >describe tech_view

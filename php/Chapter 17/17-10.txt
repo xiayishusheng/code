@@ -1,0 +1,2 @@
+mysql> SELECT CURRENT_DATE()£»		
+mysql> SELECT CURRENT_DATE()+0£»

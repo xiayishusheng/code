@@ -1,0 +1,3 @@
+mysql>ALTER TABLE class2 
+->ADD INDEX th (math) ;
+->DESCRIBE class2£»

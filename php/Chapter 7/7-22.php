@@ -1,0 +1,9 @@
+<?php								
+	$languages=array(10=>"ASP",		
+			20=>"PHP",				
+			21=>"Python");			
+		asort($languages);			
+		print_r($languages);			
+		rsort($languages);			
+		print_r($languages);			
+?>									

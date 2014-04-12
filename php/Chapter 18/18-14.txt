@@ -1,0 +1,9 @@
+mysql>CREATE TABLE school ( 			
+->member VARCHAR( 15 ) NOT NULL ,		
+->sex VARCHAR( 5 ) NOT NULL ,			
+->age TINYINT( 5 ) NOT NULL ,			
+->class VARCHAR( 15 ) NOT NULL ,		
+->tel INT( 15 ) NOT NULL ,				
+->emai` VARCHAR( 20 ) NOT NULL ,		
+->PRIMARY KEY ( `member` ) 			
+->) TIPE = MYISAM 					

@@ -1,0 +1,7 @@
+mysql> CREATE TABLE price1(						
+	->computer FLOAT(8,2),						
+	->jewelery DECIMAL(8£¬2)						
+-> );
+mysql>INSERT INTO price1 VALUES(4865.32,4865.32);	
+mysql> INSERT INTO price1 VALUES(6465.328,6465.328)	
+mysql>SELECT * FROM price1;						

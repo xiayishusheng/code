@@ -1,0 +1,23 @@
+mysql>create database people; 		
+mysql>use people					
+mysql>create table students(		
+	-> id    int, 					
+	-> name varchar(50), 			
+	-> age  varchar(10) 			
+	-> sex varchar(10), 			
+	-> tel varchar(30) 			
+	->);	
+create table teacher(				
+	-> id    int, 					
+	-> name varchar(50), 			
+	-> lesson varchar(20) 		
+	-> age  varchar(10) 			
+	-> sex varchar(10), 			
+	-> tel varchar(30) 			
+	->);
+mysql>create table employee(		
+	->name varchar(50), 			
+	->age  varchar (20), 			
+	->sex varchar(10), 			
+	->wage varchar(20) 			
+	->); 	

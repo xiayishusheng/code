@@ -1,0 +1,2 @@
+一、1、标签；2、开始尖括号、结束尖括号；3、<HTML>、</HTML>；4、<H>；5、<FONT>、Face 、Size、Color；6、<p>；7、<BR>；8、<NOBR> 
+二、1、C；2、ABC；3、ABCD；4、B

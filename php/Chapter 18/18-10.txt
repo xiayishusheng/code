@@ -1,0 +1,2 @@
+mysql>INSERT INTO Persons 						
+->VALUES ("7",'gao', 'pei', "19"," Beijing")	

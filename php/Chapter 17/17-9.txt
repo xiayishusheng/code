@@ -1,0 +1,10 @@
+mysql>CREATE TABLE  Time						
+-> (
+	->id INT,								
+	->test TIMESTAMP							
+)
+
+mysql>INSERT Time VALUES(1,20080808000000)		
+mysql>INSERT Time (id) VALUES(2)				
+
+mysql>SELECT * from Time;						

@@ -1,0 +1,6 @@
+mysql> CREATE TABLE price(					
+	->book FLOAT(4,2) 					
+-> );
+mysql>INSERT INTO price VALUES(21.1);		
+mysql> INSERT INTO price VALUES(32.1234);	
+mysql>SELECT * FROM price;					

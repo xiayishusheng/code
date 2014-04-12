@@ -1,0 +1,7 @@
+mysql>LOCK TABLE class2 WRITE;						
+mysql>SELECT name,math 							
+->FROM class2 									
+->WHERE Chinese=85;								
+mysql>INSERT INTO class2 VALUES("Lili","200810","82","85","91");
+												
+mysql>unlok tables;								

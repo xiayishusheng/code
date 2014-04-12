@@ -1,0 +1,7 @@
+mysql>CREATE TABLE dt(						
+	->a date									
+	->b time 								
+	->c datetime								
+->);
+mysql>INSERT INTO dt values (now(),now(),now());
+mysql>SELECT * FROM dt						

@@ -1,0 +1,2 @@
+Ò»¡¢1¡¢Apache¡¢IIS£»2¡¢MySQL£»3¡¢php.ini£»4¡¢echo£»5¡¢phpinfo()£»6¡¢php_mbstring.dll£»7¡¢short_open_tag£»8¡¢mysql_connect£¨£©
+¶þ¡¢1¡¢A£»2¡¢B£»3¡¢C£»4¡¢B

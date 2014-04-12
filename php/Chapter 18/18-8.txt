@@ -1,0 +1,6 @@
+mysql>select * 				
+->from persons				
+->group by city;				
+mysql>select count(*) 		
+->from persons				
+->group by city;				

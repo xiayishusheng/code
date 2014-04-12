@@ -1,0 +1,4 @@
+一、1、function；2、按值传递、引用传递、按值传递；3、return语句；4、局部变量；5、全局变量；6、动态变量、静态变量；7、递归调用；8、require（）、include（）；9、require_once（）、include_once（）；10、round（）、ceil（）
+二、1、D；2、A；3、C；4、B；5、C
+四、1、提示：可以参考范例6-2的程序，得到当前日期可通过函数getdate（）。
+2、提示：可以根据范例6-9编写函数的嵌套，要通过文件包含函数require或include调用文件area.php。

@@ -1,0 +1,7 @@
+mysql> CREATE TABLE contacts(				
+    -> id INT(4) NOT NULL PRIMARY KEY ,		
+    -> name VARCHAR(20),					
+    -> address VARCHAR(100),				
+    -> phone TINYINT (15) DEFAULT NULL,		
+    -> zip CHAR(6)							
+    -> );

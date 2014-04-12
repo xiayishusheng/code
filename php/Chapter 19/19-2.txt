@@ -1,0 +1,10 @@
+mysql>LOCK TABLE class2 READ;							
+mysql>SELECT name,math 								
+->FROM class2 										
+->WHERE Chinese=85;									
+
+mysql>INSERT INTO class2 VALUES("Libei","200809","82","89","90");	
+													
+mysql>SELECT ID,Age 									
+->FROM Persons 										
+->WHERE City="Beijing";								

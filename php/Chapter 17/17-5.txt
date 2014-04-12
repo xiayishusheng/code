@@ -1,0 +1,6 @@
+mysql>CREATE TABLE table1(								
+	->ID int AUTO_INCREMENT primary key,				
+	-> name char(15);									
+mysql> insert into table1 (ID,name) values("1","Jim");
+mysql> insert into table1 (name) values("Jon");			
+mysql>SELECT * FROM table1								

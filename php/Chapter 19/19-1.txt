@@ -1,0 +1,3 @@
+mysql>EXPLAIN SELECT name
+->FROM class2
+->WHERE Chinese=85\G;

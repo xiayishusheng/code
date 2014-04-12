@@ -1,0 +1,4 @@
+一、1、trim（）、ltrim（）、rtrim（）；2、strtolower（）、strtoupper（）；3、ucfirst（）、ucwords（）；4、区分大小写、不区分大小写；5、0；6、strrpos（）、strpos（）；7、is li lei、i；8、MD5；9、10.000
+二、1、A；2、C；3、B；4、C；5、B
+四、1、提示：主要是大小写转换问题，函数在8.4节。
+2、可以先统计人数，再确定分几个数组，程序可参考综合练习2。

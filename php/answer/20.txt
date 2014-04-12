@@ -1,0 +1,2 @@
+一、1、mysql_connect（）、mysql_pconnect（）；2、mysql_select_db（）；3、$result=mysql_query（”create database <student>”)；4、mysql_errno（）、mysql_error（）；5、mysql_num_rows($database)、mysql_num_rows($tables)；6、数据库文件名；7、update；8、mysql_data_seek（）
+二、1、B；2、A；3、D；4、A

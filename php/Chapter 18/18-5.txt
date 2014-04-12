@@ -1,0 +1,2 @@
+mysql>SELECT ID,CONCAT(Fist_Name," ",Last_Name) as info	
+->FROM Persons;										

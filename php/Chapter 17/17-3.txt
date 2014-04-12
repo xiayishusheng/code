@@ -1,0 +1,3 @@
+mysql>INSERT INTO price VALUES(31.258
+mysql>SELECT * 
+FROM price;	

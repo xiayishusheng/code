@@ -1,0 +1,6 @@
+mysql>CREATE TABLE table2(								
+	->ID int(3) ZEROFILL,								
+	-> name char(20)									
+	->);
+mysql> INSERT INTO table2 (ID,name) values("1","Jim");
+mysql>SELECT * FROM table2								

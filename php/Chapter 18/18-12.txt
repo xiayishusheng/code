@@ -1,0 +1,2 @@
+mysql>DELETE FROM Persons 				
+->WHERE Last_Name = "dalei"			

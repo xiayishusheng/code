@@ -1,0 +1,20 @@
+mysql>create database news			
+mysql>use news					
+mysql>create table user(			
+->username varchar(50) NOT NULL, 	
+->password varchar(20) NOT NULL, 	
+->phone varchar(30), 				
+->time datetime					
+->primary key (username)
+->);
+mysql>create table admin(			
+->name varchar(15) NOT NULL, 		
+->password varchar(20) NOT NULL	
+->); 	
+mysql>create table article(		
+->id int(3) NOT NULL auto_increment, 
+->title  varchar (50) NOT NULL, 	
+->editor varchar(20) NOT NULL, 	
+->time datetime, 					
+->primary key (id) 				
+->); 		

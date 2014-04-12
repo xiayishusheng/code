@@ -1,0 +1,4 @@
+mysql >create view tech_view as
+->select id,name,lesson 
+->from teachers;
+->select * from tech_view

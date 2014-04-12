@@ -1,0 +1,20 @@
+mysql>CREATE TABLE class2(					
+->name varchar(15) NOT NULL, 				
+->numb int(10) NOT NULL, 					
+->math int(5), 							
+->Chinese int(5),							
+->English int(5)							
+->); 		
+
+mysql>INSERT INTO class2 					
+->  VALUES,								
+-> ("Tom","200801","89","69","95"),		
+-> ("Jun","200802","82","78","86"),		
+-> ("Lucy","200803","67","85","97"),		
+-> ("Jim","200804","68","85","84"),		
+-> ("Marry","200805","89","68","90"),		
+-> ("Kate","200806","84","95","96"),		
+-> ("Mike","200807","58","87","75");		
+
+mysql>SELECT * FROM class2					
+-> WHERE Chinese<"80"';					

@@ -1,0 +1,2 @@
+一、1、逗号、访问的表；2、WHERE子句；3、从低值到高、从最高到低、ASC；4、Update；5、INSERT INTO；6、被删除纪录的数量；7、phpMyAdmin；8、ORDER BY
+二、1、B；2、A；3、B；4、C

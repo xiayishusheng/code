@@ -1,0 +1,4 @@
+mysql>select (2+3*2.3)/1.8;			
+mysql> SELECT (math+Chinese+english)/3 	
+->FROM class2 						
+->WHERE name="Tom";					

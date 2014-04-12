@@ -1,0 +1,13 @@
+<?php								
+	$filename='zhufu.txt';			
+	$handle=fopen($filename,"w");		
+	fwrite($handle,"G\r\n");			
+	fwrite($handle,"O\r\n");			
+	fwrite($handle,"O\r\n");			
+	fwrite($handle,"D\r\n");			
+	fwrite($handle,"L\r\n");			
+	fwrite($handle,"U\r\n");			
+	fwrite($handle,"C\r\n");			
+	fwrite($handle,"K\r\n");			
+	fclose($handle);					
+?>									

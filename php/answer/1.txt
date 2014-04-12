@@ -1,0 +1,2 @@
+一、1、HTML、<?php、?>；2、Zend II引擎；3、MySQL；4、动态网页；5、Zend Studio、PHP Edit；6、佳、好、低；7、Front Page、Dream Weaver；8、记事本
+二、1、D；2、A；3、B；4、D

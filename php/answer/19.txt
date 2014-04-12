@@ -1,0 +1,2 @@
+一、1、普通索引、唯一性索引、全文索引；2、ALTER TABLE；3、MyISAM表；4、TEMPORARY；5、HEAP；6、JOIN连接；7、LOCK TABLE；8、关联性；
+二、1、A；2、D；3、C；4、B

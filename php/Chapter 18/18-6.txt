@@ -1,0 +1,7 @@
+mysql>SELECT ID , Age 			
+->FROM Persons					
+->ORDER BY Age	 				
+->LIMIT 4;						
+mysql>SELECT ID , Age 			
+->FROM Persons					
+->WHERE ID LIMIT 003,006;	 		

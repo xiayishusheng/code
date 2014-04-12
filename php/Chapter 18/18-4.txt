@@ -1,0 +1,3 @@
+mysql>SELECT * 					
+->FROM Persons					
+->WHERE First_name LIKE('_h%');	

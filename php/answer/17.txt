@@ -1,0 +1,2 @@
+一、TINYINT、SMALLINT、MEDIUMINT、INT、BIGINT；2、FLOAT、DOUBLE、DECIMAL、无符号型；3、自动增量；4、005；5、将被修正为创建表时、1～255；6、一个字节记录长度；7、大量文字、声音、图像；8、65536
+二、1、B；2、A；3、C；4、A
