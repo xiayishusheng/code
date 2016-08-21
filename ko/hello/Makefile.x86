@@ -1,0 +1,8 @@
+KERNELDIR := /usr/src/linux-source-3.13.0
+PWD :=$(shell pwd)
+MAKE=make
+obj-m := hello.o
+modules:
+	$(MAKE) -C $(KERNELDIR) M=$(PWD) modules
+clean:
+	rm -rf *.ko *.o .*.cmd *.mod.c *.order *.symvers .tmp_versions/
