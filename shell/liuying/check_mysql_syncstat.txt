@@ -1,0 +1,32 @@
+#!/bin/bash
+help () {
+        echo "用法: $0 -w <WARNING阀值,单位:秒> -c <CRITICAL阀值,单位:秒>"
+        exit 2
+}
+while getopts "w:c:h" OPT
+do
+        case $OPT in
+        "w") warning=$OPTARG;;
+        "c") critical=$OPTARG;;
+        "h") help;;
+        esac
+done
+delay_time1=`pt-heartbeat -D test --check -u repl -p 'repl123$' -P 3306 -h 10.1.18.50 --master-server-id=2`
+delay_time2=`pt-heartbeat -D test --check -u repl -p 'repl123$' -P 3306 -h 10.1.18.50 --master-server-id=2`
+delay_time3=`pt-heartbeat -D test --check -u repl -p 'repl123$' -P 3306 -h 10.1.18.50 --master-server-id=3`
+for delay_time in $delay_time1 $delay_time2 $delay_time3
+do
+if [ $(echo "$delay_time >= ${critical}"|bc) = 1 ] ; then
+        msg="CRITICAL"
+        status=2
+elif [ $(echo "$delay_time >= ${warning}"|bc) = 1 ] ; then
+        msg="WARNING"
+        status=1
+else
+        msg="OK"
+        status=0
+fi
+done
+
+echo "MySQL主从复制$msg :节点1延时${delay_time1}秒,节点2延时${delay_time2}秒,节点3延时${delay_time3}秒|'Delay Time'=${delay_time};${warning};${critical};0;"
+exit $status

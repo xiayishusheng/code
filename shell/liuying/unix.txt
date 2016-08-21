@@ -1,0 +1,57 @@
+#!/bin/bash
+help () {
+        echo "用法: $0 -w <WARNING阀值,单位:秒> -c <CRITICAL阀值,单位:秒>"
+        exit 2
+}
+while getopts "w:c:h" OPT
+do
+        case $OPT in
+        "w") warning=$OPTARG;;
+        "c") critical=$OPTARG;;
+        "h") help;;
+        esac
+done
+
+delay_time1=`pt-heartbeat -D test --check -u repl -p 'repl123$' -P 3306 -h 10.1.18.50 --master-server-id=1`
+delay_time2=`pt-heartbeat -D test --check -u repl -p 'repl123$' -P 3306 -h 10.1.18.50 --master-server-id=2`
+delay_time3=`pt-heartbeat -D test --check -u repl -p 'repl123$' -P 3306 -h 10.1.18.50 --master-server-id=3`
+#delay_time1=`echo 10.00`
+#delay_time2=`echo 0.00`
+#delay_time3=`echo 5.00`
+
+
+func(){
+jd=$1
+case $jd in
+"delay_time1")
+jd=$delay_time1 && jd_name="节点1";;
+"delay_time2")
+jd=$delay_time2 && jd_name="节点2";;
+"delay_time3")
+jd=$delay_time3 && jd_name="节点3";;
+esac
+if [ $(echo "$jd >= ${critical}"|bc) = 1 ] ; then
+msg="CRITICAL"
+elif [ $(echo "$jd >= ${warning}"|bc) = 1 ] ; then
+msg="WARNING"
+else
+msg="OK"
+fi
+echo "$msg$jd_name延时$jd秒"
+#echo $jd_name
+}
+
+jd1_OUT=$(func delay_time1)
+jd2_OUT=$(func delay_time2)
+jd3_OUT=$(func delay_time3)
+out=${jd1_OUT},${jd2_OUT},${jd3_OUT}.
+if [[ $out =~ "CRITICAL" ]] ; then
+status=2
+elif [[ $out =~ "WARNING" ]] ; then
+status=1
+else
+status=0
+fi
+echo "$out"
+exit $status
+exit

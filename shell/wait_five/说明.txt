@@ -1,0 +1,2 @@
+这么运行：
+./wait_five.sh > /dev/null 2 > &1 &
