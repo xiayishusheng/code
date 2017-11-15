@@ -1,11 +1,11 @@
 /**
-* Èí¼şÃû³Æ ÃüÁîĞĞ´òjar°ü
+* è½¯ä»¶åç§° å‘½ä»¤è¡Œæ‰“jaråŒ…
 * @author zhen
 * @version 1.0
 */
 public class HelloWorld {
 	/**
-	* Ö÷·½·¨£¬³ÌĞòÈë¿Ú
+	* ä¸»æ–¹æ³•ï¼Œç¨‹åºå…¥å£
 	*/
 	public static void main(String args[]) {
 		
@@ -17,7 +17,7 @@ public class HelloWorld {
 	}
 	
 	/**
-	* ´òÓ¡
+	* æ‰“å°
 	*/
 	public void print() {
 		System.out.println("HelloWorld Test!");

@@ -3,11 +3,11 @@ import java.util.Scanner;
 public class KeyBoardScannerTest {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		//°Ñ»Ø³µ×îÎª·Ö¸ô·û
+		//æŠŠå›è½¦æœ€ä¸ºåˆ†éš”ç¬¦
 		//sc.useDelimiter("\n");
 		while(sc.hasNext()) {
-			//Êä³öÊäÈëÏî
-			System.out.println("¼üÅÌÊäÈëµÄÄÚÈİÊÇ£º" + sc.next());
+			//è¾“å‡ºè¾“å…¥é¡¹
+			System.out.println("é”®ç›˜è¾“å…¥çš„å†…å®¹æ˜¯ï¼š" + sc.next());
 		}
 	}
 }

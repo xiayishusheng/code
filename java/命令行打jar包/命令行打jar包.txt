@@ -1,6 +1,0 @@
-命令行方式打jar包:
-
-javac HelloWorld.java
-jar cfvm HelloWorld.jar HelloWorld.txt HelloWorld.class Test.class
-
-jar cfvM 不生成清单文件

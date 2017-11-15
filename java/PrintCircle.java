@@ -5,21 +5,21 @@ public class PrintCircle {
   * @param args
   */
  public static void main(String[] args) {
-   int n=10;//nÔ½´ó£¬²ÅÄÜÔ½½Ó½üÔ²
+   int n=10;//nè¶Šå¤§ï¼Œæ‰èƒ½è¶Šæ¥è¿‘åœ†
    PrintCircle p = new PrintCircle();
    for(int i=0;i<2*n;i++){
      p.printPoint(n,i);
    }
  }
  
- private int[] getXFromY(int y,int n)//nÎª°ë¾¶£¬y<2n,·µ»Ø2¸öx
+ private int[] getXFromY(int y,int n)//nä¸ºåŠå¾„ï¼Œy<2n,è¿”å›2ä¸ªx
  {
-   if(y<=n){//ÉÏ°ë²à
+   if(y<=n){//ä¸ŠåŠä¾§
      int x1=n-(int)Math.sqrt(n*n-(n-y)*(n-y));
      int x2=(int)Math.sqrt(n*n-(n-y)*(n-y))+n;
      return new int[]{x1,x2};
    }
-   else if(y<=2*n){//ÏÂ°ë²à
+   else if(y<=2*n){//ä¸‹åŠä¾§
      int x1=n-(int)Math.sqrt(n*n-(n-y)*(n-y));
      int x2=(int)Math.sqrt(n*n-(n-y)*(n-y))+n;
      return new int[]{x1,x2};
@@ -27,7 +27,7 @@ public class PrintCircle {
    return null;
  }
  
- private void printPoint(int n,int y){//°ë¾¶n,ÔÚ(x,y)µÄÎ»ÖÃ´òÓ¡Ò»¸ö*
+ private void printPoint(int n,int y){//åŠå¾„n,åœ¨(x,y)çš„ä½ç½®æ‰“å°ä¸€ä¸ª*
      int x1=getXFromY(y,n)[0];
      int x2=getXFromY(y,n)[1];
      for(int i=0;i<=2*n;i++){

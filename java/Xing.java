@@ -1,23 +1,24 @@
 import java.util.Scanner;
 
 public class Xing {
-	public static void main(String[] args) {
-		int i,j,k,n;
-		Scanner input = new Scanner(System.in);
-		System.out.print("ÇëÊäÈë½ğ×ÖËş²ãÊı£º");
-		n = input.nextInt();
-		//Íâ²ãÑ­»·¿ØÖÆ²ãÊı
-		for(i=1; i<=n; i++) {
-			//¸ù¾İÍâ²ãĞĞºÅ£¬Êä³öĞÇºÅ×ó±ß¿Õ¸ñ
-			for(j=1; j<=n-i; j++) {
-				System.out.print(" ");
-			}
-			//¸ù¾İÍâ²ãĞĞºÅ£¬Êä³öĞÇºÅ¸öÊı
-			for(k=1; k<=2*i-1; k++) {
-				System.out.printf("*");
-			}
-			//Ò»ĞĞ½áÊø£¬»»ĞĞ
-			System.out.printf("\n");
-		}
+    public static void main(String[] args) {
+        int i,j,k,n;
+        Scanner input = new Scanner(System.in);
+        System.out.print("è¯·è¾“å…¥é‡‘å­—å¡”å±‚æ•°ï¼š");
+        n = input.nextInt();
+        //å¤–å±‚å¾ªç¯æ§åˆ¶å±‚æ•°
+        for(i=1; i<=n; i++) {
+            //æ ¹æ®å¤–å±‚è¡Œå·ï¼Œè¾“å‡ºæ˜Ÿå·å·¦è¾¹ç©ºæ ¼
+            for(j=1; j<=n-i; j++) {
+                System.out.print(" ");
+            }
+            //æ ¹æ®å¤–å±‚è¡Œå·ï¼Œè¾“å‡ºæ˜Ÿå·ä¸ªæ•°
+            for(k=1; k<=2*i-1; k++) {
+                System.out.printf("*");
+            }
+            //ä¸€è¡Œç»“æŸï¼Œæ¢è¡Œ
+            System.out.printf("\n");
+        }
     }
 }
+

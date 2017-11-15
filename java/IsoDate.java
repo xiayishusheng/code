@@ -1,5 +1,3 @@
-package org.kobjects.isodate;
-
 import java.util.*;
 
 public class IsoDate {

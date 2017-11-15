@@ -1,9 +1,9 @@
 /**
-* ²âÊÔÀà
+* æµ‹è¯•ç±»
 */
 public class Test {
 	/**
-	* ´òÓ¡²âÊÔ
+	* æ‰“å°æµ‹è¯•
 	*/
 	public void print() {
 		System.out.println("Test!");
