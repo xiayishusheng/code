@@ -1,0 +1,25 @@
+#文件名称
+MODALE_NAME=hello
+#删除
+RM=rm -rf
+
+#所有obj文件
+OBJS=$(MODALE_NAME).o
+
+#编译器链接
+all:
+	gcc $(FLAGS) -c $(MODALE_NAME).s -o $(MODALE_NAME).o
+	gcc $(FLAGS) $(OBJS) -o $(MODALE_NAME)
+
+old:
+	gcc $(FLAGS) -E $(MODALE_NAME).c -o $(MODALE_NAME).i
+	gcc $(FLAGS) -S $(MODALE_NAME).i -o $(MODALE_NAME).s
+	gcc $(FLAGS) -c $(MODALE_NAME).s -o $(MODALE_NAME).o
+	gcc $(FLAGS) $(OBJS) -o $(MODALE_NAME)
+
+#删除所有.o文件
+clean:
+	$(RM) *.o
+	$(RM) *.i  
+	$(RM) $(MODALE_NAME)
+
