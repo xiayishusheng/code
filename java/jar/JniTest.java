@@ -1,3 +1,5 @@
+package com.kaiwen;
+
 /**
  * Jni Test
  */

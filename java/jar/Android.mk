@@ -4,5 +4,8 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 LOCAL_MODULE := str
 LOCAL_SRC_FILES := JniTest.c
+#LOCAL_LDFLAGS := -Wl,-hash-style=gnu
+LOCAL_LDFLAGS := -Wl,-hash-style=sysv
+LOCAL_LDFLAGS += -fPIE -pie -shared
 include $(BUILD_SHARED_LIBRARY)
 
