@@ -9,3 +9,10 @@ LOCAL_LDFLAGS := -Wl,-hash-style=sysv
 LOCAL_LDFLAGS += -fPIE -pie -shared
 include $(BUILD_SHARED_LIBRARY)
 
+include $(CLEAR_VARS)
+LOCAL_MODULE := reg
+LOCAL_SRC_FILES := JniRegister.c
+LOCAL_LDFLAGS := -Wl,-hash-style=sysv
+LOCAL_LDFLAGS += -fPIE -pie -shared
+include $(BUILD_SHARED_LIBRARY)
+

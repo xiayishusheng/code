@@ -15,8 +15,10 @@ jarjni:
 
 ifeq ($(OS_NAME), linux)
 	gcc JniTest.c -I${JAVA_HOME}/include -I ${JAVA_HOME}/include/linux -shared -fPIC -o libstr.so
+	gcc JniRegister.c -I${JAVA_HOME}/include -I ${JAVA_HOME}/include/linux -shared -fPIC -o libreg.so
 else ifeq ($(OS_NAME), mingw)
 	cl -I %JAVA_HOME%\include -I %JAVA_HOME%\include\win32 -LD JniTest.c -Felibstr.dll
+	cl -I %JAVA_HOME%\include -I %JAVA_HOME%\include\win32 -LD JniRegister.c -Felibreg.dll
 endif
 
 dex:
@@ -36,6 +38,7 @@ runjarjni:
 	@echo "\n运行jarjni:"
 	@#java -verbose:jni -Djava.library.path=. com.kaiwen.JniTest
 	java -Djava.library.path=. -cp HelloWorld.jar com.kaiwen.JniTest
+	java -Djava.library.path=. -cp HelloWorld.jar com.kaiwen.JniRegister
 
 rundex:
 	@echo "\n运行dex:"
@@ -45,7 +48,9 @@ rundex:
 rundexjni:
 	@echo "\n运行rundexjni:"
 	adb push  out/libs/armeabi/libstr.so /data/local/tmp
+	adb push  out/libs/armeabi/libreg.so /data/local/tmp
 	adb shell dalvikvm -Djava.library.path=/data/local/tmp -cp /data/local/tmp/HelloWorld.dex com.kaiwen.JniTest
+	adb shell dalvikvm -Djava.library.path=/data/local/tmp -cp /data/local/tmp/HelloWorld.dex com.kaiwen.JniRegister
 
 clean:
 	@echo "\n清理文件:"
