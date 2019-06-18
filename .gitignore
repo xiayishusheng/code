@@ -10,3 +10,5 @@ bin
 out
 build
 
+# linux
+a.out
