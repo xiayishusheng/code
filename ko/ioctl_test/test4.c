@@ -4,7 +4,7 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <sys/ioctl.h>
-#include <sys/soundcard.h>
+#include <linux/soundcard.h>
 #include <stdio.h>
 #include <unistd.h>
 #include <math.h>

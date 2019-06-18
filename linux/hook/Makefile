@@ -1,4 +1,8 @@
+CC = gcc -g
+
 test: main.c hook.so
-	gcc -o test main.c
+	$(CC) -o test main.c
 hook.so: hook.c
-	gcc -fPIC -shared -o hook.so hook.c -ldl
+	$(CC) -fPIC -shared -o hook.so hook.c -ldl
+clean:
+	rm -rf test hook.so

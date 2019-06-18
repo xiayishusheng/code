@@ -1,11 +1,13 @@
 #include <arpa/inet.h>
+#include <errno.h>
 #include <fcntl.h>
 #include <net/if.h>
 #include <netdb.h>
+#include <netinet/in.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <string.h>
+#include <strings.h>
 #include <sys/ioctl.h>
 #include <sys/socket.h>
 #include <sys/types.h>
@@ -71,7 +73,7 @@ int main(int argc, char *argv[])
     err = ioctl(s, SIOCGIFHWADDR, &ifr);
     if (-1 != err)
     {
-        unsigned char *hw = ifr.ifr_ifru.ifru_hwaddr.sa_data;
+        char *hw = ifr.ifr_ifru.ifru_hwaddr.sa_data;
         printf("SIOCGIFHWADDR:%02x:%02x:%02x:%02x:%02x:%02x\n", hw[0], hw[1],
                 hw[2], hw[3], hw[4], hw[5]);
     }

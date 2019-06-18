@@ -23,7 +23,7 @@ int get_all_if_config(void)
     int i=0;
     int sockfd;
     struct ifconf ifconf;
-    unsigned char buf[512];
+    char buf[512];
     struct ifreq *ifreq;
     ifconf.ifc_len = 512;
     ifconf.ifc_buf = buf;

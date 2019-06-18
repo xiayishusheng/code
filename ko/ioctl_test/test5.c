@@ -1,15 +1,18 @@
-#include <sys/types.h>  
-#include <sys/ioctl.h>  
-#include <sys/socket.h>  
-#include <net/if.h>  
-#include <stdio.h>  
-#include <stdlib.h>  
-#include <unistd.h>  
-#include <netdb.h>  
-#include <string.h>  
-#include <fcntl.h>  
-#include <string.h>  
+#include <arpa/inet.h>
 #include <errno.h>
+#include <fcntl.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/socket.h>
+#include <sys/types.h>
+#include <unistd.h>
+
 typedef uint32_t uint32; 
 #define MAX_IF 10
 int main()
