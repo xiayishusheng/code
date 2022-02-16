@@ -1,12 +1,8 @@
-#KERNELDIR := /home/qyg/android/kernel/goldfish/
-PWD :=$(shell pwd)
-ARCH=arm
-CROSS_COMPILE=arm-eabi-
-MAKE=make
-#CC=$(CROSS_COMPILE)gcc
-#LD=$(CROSS_COMPILE)ld
+KERNELDIR := /lib/modules/`uname -r`/build
+PWD := $(shell pwd)
 obj-m := hello.o
+MAKE=make
 modules:
-	$(MAKE) -C $(KERNELDIR) ARCH=$(ARCH) CROSS_COMPILE=$(CROSS_COMPILE) M=$(PWD) modules
+	$(MAKE) -C $(KERNELDIR) M=$(PWD) modules
 clean:
-	rm -rf *.ko *.o .*.cmd *.mod.c *.order *.symvers .tmp_versions/
+	$(MAKE) -C $(KERNELDIR) M=$(PWD) clean
